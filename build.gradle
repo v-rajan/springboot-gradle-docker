@@ -17,6 +17,8 @@ repositories {
     maven {
         url "https://repository.chnoumis.org/repository/gradle-plugins/"
         credentials {
+            username = ""
+            password = ""
         }
         content {
             includeGroup "org.springframework" // Ensure only `com.chnoumis` is resolved here
@@ -24,7 +26,7 @@ repositories {
     }
     mavenCentral {
         content {
-            excludeGroup "org.springframework" // Exclude `com.chnoumis` from Maven Central
+        //    excludeGroup "org.springframework" // Exclude `com.chnoumis` from Maven Central
         }
     }
 }
